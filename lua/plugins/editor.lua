@@ -3,6 +3,13 @@ local Util = require("lazyvim.util")
 return {
 
   {
+    "folke/flash.nvim",
+    opts = {
+      label = { rainbow = { enabled = true } },
+    },
+  },
+
+  {
     "nvim-neo-tree/neo-tree.nvim",
     keys = {
       {
@@ -43,10 +50,16 @@ return {
       defaults = {
         layout_strategy = "flex",
         layout_config = {
+          horizontal = { prompt_position = "top" },
+          vertical = {
+            mirror = true,
+            prompt_position = "top",
+          },
           flex = {
             flip_columns = 120,
           },
         },
+        sorting_strategy = "ascending",
         mappings = {
           i = { ["<Esc>"] = require("telescope.actions").close },
         },
