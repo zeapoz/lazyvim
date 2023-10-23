@@ -10,6 +10,11 @@ return {
     },
   },
 
+  {
+    "rcarriga/nvim-notify",
+    opts = { top_down = false },
+  },
+
   "folke/twilight.nvim",
   {
     "folke/zen-mode.nvim",

@@ -47,6 +47,9 @@ return {
             flip_columns = 120,
           },
         },
+        mappings = {
+          i = { ["<Esc>"] = require("telescope.actions").close },
+        },
       },
       pickers = {
         find_files = {
