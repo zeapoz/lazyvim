@@ -1,5 +1,11 @@
 return {
 
+  {
+    "smjonas/inc-rename.nvim",
+    cmd = "IncRename",
+    config = true,
+  },
+
   { "L3MON4D3/LuaSnip", opts = { region_check_events = "CursorMoved" } },
 
   {

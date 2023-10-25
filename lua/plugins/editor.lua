@@ -48,7 +48,7 @@ return {
     dependencies = {
       {
         "debugloop/telescope-undo.nvim",
-        keys = { { "<leader>U", "<cmd>Telescope undo<cr>" } },
+        keys = { { "<leader>U", "<cmd>Telescope undo<cr>", desc = "Undo History" } },
         config = function()
           require("telescope").load_extension("undo")
         end,
@@ -80,10 +80,7 @@ return {
               plugin = plugin._.super
             until not plugin
           end
-          require("telescope.builtin").live_grep({
-            default_text = "/",
-            search_dirs = vim.tbl_values(files),
-          })
+          require("telescope.builtin").live_grep({ search_dirs = vim.tbl_values(files) })
         end,
         desc = "Find Lazy Plugin Spec",
       },
