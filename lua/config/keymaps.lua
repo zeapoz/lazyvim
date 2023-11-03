@@ -15,8 +15,7 @@ map("n", "<leader>uo", function()
       vim.g.neovide_transparency = 0.8
     end
   else
-    local kanagawa = require("kanagawa")
-    kanagawa.config.transparent = not kanagawa.config.transparent
-    vim.cmd.colorscheme(vim.g.colors_name)
+    -- Update wezterm opacity.
+    require("wezterm").set_user_var("toggle_opacity")
   end
 end, { desc = "Toggle background transparency" })
