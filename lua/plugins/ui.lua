@@ -17,7 +17,7 @@ return {
     },
   },
 
-  { "folke/twilight.nvim" },
+  -- { "folke/twilight.nvim" },
   {
     "folke/zen-mode.nvim",
     cmd = "ZenMode",
