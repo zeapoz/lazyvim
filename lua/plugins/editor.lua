@@ -40,14 +40,14 @@ return {
       {
         "<leader>e",
         function()
-          require("neo-tree.command").execute({ toggle = true, position = "float", dir = Util.root() })
+          require("neo-tree.command").execute({ toggle = true, reveal = true, position = "float", dir = Util.root() })
         end,
         desc = "Explorer NeoTree (root dir)",
       },
       {
         "<leader>E",
         function()
-          require("neo-tree.command").execute({ toggle = true, position = "float", dir = vim.loop.cwd() })
+          require("neo-tree.command").execute({ toggle = true, reveal = true, position = "float", dir = vim.loop.cwd() })
         end,
         desc = "Explorer NeoTree (cwd)",
       },
