@@ -33,6 +33,13 @@ return {
           NeoTreeTitleBar = { fg = theme.ui.special, bold = true, bg = theme.ui.bg_m1 },
           NeoTreeNormal = { bg = theme.ui.bg_m1 },
           NeoTreeNormalNC = { link = "NeoTreeNormal" },
+
+          -- Treesitter capture groups.
+          ["@module"] = { fg = theme.syn.constant },
+          ["@function.macro"] = { fg = theme.syn.preproc },
+          ["@lsp.type.decorator"] = { fg = theme.syn.prepoc },
+          ["@operator.try"] = { fg = theme.syn.special3 },
+          ["@keyword.await"] = { fg = theme.syn.special3 },
         }
       end,
     },
