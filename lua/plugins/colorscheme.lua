@@ -7,7 +7,6 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = not vim.g.neovide,
       colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
       overrides = function(colors)
         local theme = colors.theme
@@ -37,9 +36,11 @@ return {
           -- Treesitter capture groups.
           ["@module"] = { fg = theme.syn.constant },
           ["@function.macro"] = { fg = theme.syn.preproc },
+          ["@lsp.type.macro"] = { fg = theme.syn.prepoc },
           ["@lsp.type.decorator"] = { fg = theme.syn.prepoc },
           ["@operator.try"] = { fg = theme.syn.special3 },
           ["@keyword.await"] = { fg = theme.syn.special3 },
+          ["@keyword.import"] = { fg = theme.syn.keyword },
         }
       end,
     },

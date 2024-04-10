@@ -113,6 +113,7 @@ return {
         mappings = {
           i = { ["<Esc>"] = require("telescope.actions").close },
         },
+        borderchars = { "", "", "", "", "", "", "", "" },
       },
       pickers = {
         find_files = {
