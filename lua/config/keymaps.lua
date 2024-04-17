@@ -6,6 +6,15 @@ end
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
+-- Center view after search.
+map("n", "n", "nzz")
+map("n", "N", "Nzz")
+
+-- Only remove toggle terminal keybinding when not using GUI.
+if not vim.g.neovide then
+  vim.keymap.del("n", "<C-/>")
+end
+
 -- Toggle opaque background.
 map("n", "<leader>uo", function()
   if vim.g.neovide then
