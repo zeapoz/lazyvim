@@ -1,4 +1,4 @@
 ;; extends
 
-("?" (set! "priority" 130)) @operator.try
-("await" (set! "priority" 130)) @keyword.await
+(("?"  @operator.try) (#set! "priority" 130))
+(("await" @keyword.await) (#set! "priority" 130))
