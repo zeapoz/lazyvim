@@ -66,7 +66,7 @@ return {
       },
     },
     keys = {
-      { "<leader>.", Util.telescope("files"), desc = "Find Files (root directory)" },
+      { "<leader>.", Util.pick("files"), desc = "Find Files (root directory)" },
       {
         "<leader>fP",
         function()
